@@ -1,4 +1,4 @@
-# BEIB <img src="figures\BBdois alternative.svg" align="right" height="139" alt="Hex Sticker Placeholder" />
+# BEIB <img src="figures\BBdois alternative.svg" align="right" height="197" alt="Hex Sticker Placeholder" />
 
 <!-- badges: start -->
 <!-- badges: end -->
