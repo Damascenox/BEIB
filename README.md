@@ -1,59 +1,59 @@
-# BEIB <img src="man/figures/logo.png" align="right" height="139" alt="Hex Sticker Placeholder" />
+# BEIB <img src="figures\BBdois alternative.svg" align="right" height="139" alt="Hex Sticker Placeholder" />
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-O **BEIB** (Biblioteca de Indicadores da Educação Básica) é um pacote em R desenvolvido com o objetivo de facilitar o acesso e resgatar os dados dos indicadores educacionais calculados e disponibilizados pelo [INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais) sobre a Educação Básica no Brasil.
+**BEIB** (Basic Education Indicators of Brazil) is an R package developed with the goal of facilitating access to and retrieving data from educational indicators calculated and made available by [INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais) regarding Basic Education in Brazil.
 
-## Instalação
+## Installation
 
-Você pode instalar a versão de desenvolvimento do BEIB do [GitHub](https://github.com/) executando:
+You can install the development version of BEIB from [GitHub](https://github.com/) by running:
 
 ```r
 # install.packages("devtools")
-devtools::install_github("seu-usuario/BEIB")
+devtools::install_github("your-username/BEIB")
 ```
 
-## Indicadores Disponíveis
+## Available Indicators
 
-O pacote fornece funções para acessar facilmente os seguintes conjuntos de dados e indicadores da Educação Básica:
+The package provides functions to easily access the following datasets and Basic Education indicators:
 
-* Adequação da Formação Docente
-* Complexidade de Gestão da Escola
-* Esforço Docente
-* Ideb (Índice de Desenvolvimento da Educação Básica)
-* Indicadores Financeiros Educacionais
-* Média de Alunos por Turma
-* Média de Horas-aula diária
-* Nível Socioeconômico (Inse)
-* Percentual de Docentes com Curso Superior
-* Regularidade do Corpo Docente
-* Remuneração Média dos Docentes
-* Taxas de Distorção Idade-série
-* Taxas de Não-resposta (TNR)
-* Taxas de Transição
-* Taxas de Rendimento
+* Adequacy of Teacher Training
+* School Management Complexity
+* Teaching Effort
+* Ideb (Basic Education Development Index)
+* Educational Financial Indicators
+* Average Number of Students per Class
+* Average Daily Class Hours
+* Socioeconomic Level (Inse)
+* Percentage of Teachers with Higher Education Degree
+* Regularity of the Teaching Staff
+* Average Teacher Remuneration
+* Age-Grade Distortion Rates
+* Non-Response Rates (TNR)
+* Transition Rates
+* Pass/Fail/Dropout Rates (Taxas de Rendimento)
 
-## Exemplo de Uso
+## Usage Example
 
-Este é um exemplo básico de como utilizar o pacote para importar os dados de um dos indicadores:
+This is a basic example of how to use the package to import data from one of the indicators:
 
 ```r
 library(BEIB)
 
-# Exemplo hipotético: Baixando os dados de Média de Alunos por Turma para um ano específico
-dados_turma <- get_media_alunos_turma(ano = 2023)
+# Hypothetical example: Downloading Average Number of Students per Class data for a specific year
+class_data <- get_media_alunos_turma(ano = 2023)
 
-head(dados_turma)
+head(class_data)
 ```
 
-## Fonte dos Dados
+## Data Source
 
-Todos os dados acessados por este pacote provêm do portal de Dados Abertos do Governo Federal e do Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira (Inep).
+All data accessed by this package comes from the Federal Government's Open Data portal and the Anísio Teixeira National Institute of Educational Studies and Research (Inep).
 
-Para mais detalhes sobre as metodologias de cálculo de cada indicador, visite:
-[Indicadores Educacionais - INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais)
+For more details on the calculation methodologies of each indicator, visit:
+[Educational Indicators - INEP](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/indicadores-educacionais)
 
 ---
 
-**Nota:** Este pacote está em desenvolvimento. Contribuições, sugestões e relatos de bugs são muito bem-vindos!
+**Note:** This package is under development. Contributions, suggestions, and bug reports are very welcome!
