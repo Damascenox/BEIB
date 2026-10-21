@@ -1,0 +1,10 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^\.env$
+^\.quarto$
+^AFD_2024_.*$
+^nota_tecnica_.*\.pdf$
+^saw\.htm$
+^README_pt_br\.md$
+^figures$
+^RESUMO_FUNCOES\.md$
